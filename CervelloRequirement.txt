@@ -1,0 +1,31 @@
+python - 3.7.5
+django - 3.2
+
+
+Backend DB used - SQLite(default django DB)
+
+djangorestframework
+django-rest-knox
+django-import-export
+
+-----------------------------------------------
+api End Points -
+
+Signup - 			api/signup/
+Login - 			api/login/
+Logout - 			api/logout/
+
+Create -			api/lectures/
+List all - 			api/lectures/
+retrieve -			api/lectures/<id>/
+update/delete - 	api/lectures/<id>/
+upload excel file - api/upload/
+
+-----------------------------------------------
+superuser/pwd - cervelloadmin
+
+
+
+
+
+

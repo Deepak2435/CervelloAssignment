@@ -1,0 +1,14 @@
+1. ORM query for all the lectures that belong to the given course 'Flask' -
+
+	courseFlask = Course.objects.filter(title = 'Flask')
+	sectionsFlask = courseFlask.section.all().title
+	lecturesFlask = sectionsFlask.lectures.all()
+	
+2. Which course has a given section with title 'Set-up' - 
+
+	courseWithSecctionSetup = Section.objects.filter(title = 'Set-up').course.all()
+
+3. Which course has no lectures containing keyword 'design' -
+
+	lecture = Lectures.objects.exclude(title__contains = "design")
+	lecture.section.course.all()
